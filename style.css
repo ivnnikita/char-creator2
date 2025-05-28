@@ -1,0 +1,123 @@
+/* Основные стили */
+body {
+    font-family: 'Times New Roman', serif;
+    background: url('https://img.freepik.com/free-photo/old-paper-texture_1194-5412.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #3a2c1a;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 248, 220, 0.85); /* Полупрозрачный пергамент */
+    padding: 30px;
+    border: 15px solid transparent;
+    border-image: url('https://i.imgur.com/QnqUXJt.png') 30 round; /* Рамка из "дерева" */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #5c3a21;
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #8b4513; /* Коричневая линия */
+    padding-bottom: 10px;
+}
+
+/* Выпадающие списки */
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #5c3a21;
+    border-radius: 5px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+
+/* Кнопка */
+#generate-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    background: linear-gradient(to bottom, #8b4513, #5c3a21); /* Градиент "металл" */
+    color: #f5deb3;
+    border: none;
+    border-radius: 5px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+
+
+#generate-btn:hover {
+    background: linear-gradient(to bottom, #5c3a21, #3a2c1a);
+    transform: translateY(-2px);
+}
+
+/* Блок с персонажем */
+#character-sheet {
+    background: rgba(255, 248, 220, 0.9);
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'MedievalSharp', cursive;
+}
+
+#character-sheet p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+#character-sheet ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#character-sheet li {
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+#character-sheet li:before {
+    content: "✧";
+    position: absolute;
+    left: 0;
+    color: #8b4513;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .app {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}

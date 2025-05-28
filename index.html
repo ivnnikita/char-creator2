@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор персонажа НРИ</title>
+    
+    <!-- Подключаем шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel+Decorative:wght@700&family=IM+Fell+English&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Заголовок с иконкой -->
+        <h1>
+            <i class="fas fa-dragon dragon-icon"></i>
+            Создание персонажа
+            <i class="fas fa-scroll scroll-icon"></i>
+        </h1>
+        
+        <!-- Блок выбора расы -->
+        <div class="step" id="step-race">
+            <h2><i class="fas fa-helmet-battle"></i> Шаг 1: Выберите расу</h2>
+            <div class="select-wrapper">
+                <select id="race-select">
+                    <option value="human">Человек</option>
+                    <option value="elf">Эльф</option>
+                    <option value="dwarf">Гном</option>
+                    <!--<option value="orc">Орк</option>-->
+                </select>
+                
+            </div>
+        </div>
+        
+        <!-- Блок выбора класса -->
+        <div class="step" id="step-class">
+            <h2><i class="fas fa-sword"></i> Шаг 2: Выберите класс</h2>
+            <div class="select-wrapper">
+                <select id="class-select">
+                    <option value="warrior">Воин</option>
+                    <option value="mage">Маг</option>
+                    <option value="rogue">Плут</option>
+                     <!--<option value="cleric">Жрец</option>-->
+                </select>
+            </div>
+        </div>
+        
+        <!-- Блок характеристик -->
+        <div class="step" id="step-stats">
+            <h2><i class="fas fa-chart-bar"></i> Шаг 3: Характеристики</h2>
+            <div id="stats-container" class="stats-grid">
+                <!-- Здесь будет динамическое содержимое -->
+            </div>
+        </div>
+        
+        <!-- Кнопка генерации -->
+        <button id="generate-btn" class="fantasy-button">
+            <i class="fas fa-hat-wizard"></i> Создать персонажа
+        </button>
+        
+        <!-- Результат -->
+        <div id="result" class="hidden character-sheet">
+            <h2><i class="fas fa-scroll-old"></i> Ваш персонаж:</h2>
+            <div id="character-sheet" class="parchment">
+                <!-- Здесь появится сгенерированный персонаж -->
+           <!-- </div>
+            <button id="generate-btn" class="fantasy-button">
+                <i class="fas fa-save"></i> Сохранить
+            </button>
+        </div>-->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
