@@ -15,7 +15,7 @@ body {
     background-color: rgba(255, 248, 220, 0.85); /* Полупрозрачный пергамент */
     padding: 30px;
     border: 15px solid transparent;
-    border-image: url('https://i.imgur.com/QnqUXJt.png') 30 round; /* Рамка из "дерева" */
+    border-image: url('https://texturelabs.org/wp-content/uploads/Texturelabs_Wood_189S.jpg') 30 round; /* Рамка из "дерева" */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
